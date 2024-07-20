@@ -6,7 +6,8 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-
+export VISUAL=vim
+export EDITRO="$VISUAL"
 
 # Added by Toolbox App
 export PATH="$PATH:/home/umartinez/.local/share/JetBrains/Toolbox/scripts"
