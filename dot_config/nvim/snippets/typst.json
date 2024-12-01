@@ -1,0 +1,12 @@
+{
+  "Math Block": {
+    "prefix": ["$ $", "block", "math"],
+    "body": ["$\n${0:element}\n$"],
+    "description": "Inserts a math block"
+  },
+  "Math Inline": {
+    "prefix": ["$$", "inline", "math"],
+    "body": ["$${0}$"],
+    "description": "Inserts inline math"
+  }
+}

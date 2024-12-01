@@ -1,0 +1,19 @@
+{
+  "name": "UserSnippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./dart.json"
+      },
+      {
+        "language": "json",
+        "path": "./arb.json"
+      },
+      {
+        "language": "typst",
+        "path": "./typst.json"
+      }
+    ]
+  }
+}

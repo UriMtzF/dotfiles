@@ -1,0 +1,10 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.coding.luasnip",
+    "lazyvim.plugins.extras.lang.git"
+  ],
+  "news": {
+    "NEWS.md": "7429"
+  },
+  "version": 7
+}
