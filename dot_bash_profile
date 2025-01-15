@@ -10,22 +10,10 @@ export VISUAL=vim
 export EDITOR=vim
 export HOME_PATH=/home/umartinez
 
-export PATH="$PATH:/home/umartinez/Applications/chromedriver"
-
 # Added by Toolbox App
 export PATH="$PATH:/home/umartinez/.local/share/JetBrains/Toolbox/scripts"
 
 export PATH="$PATH:/home/umartinez/Applications/ngrok"
 
-if [ -n $DISTROBOX_ENTER_PATH ]; then
-    export ANDROID_SDK_ROOT=$HOME_PATH/Development/Android/sdk
-    export ANDROID_HOME=$ANDROID_SDK_ROOT
-    export ANDROID_TOOLS_PATH=$ANDROID_HOME/cmdline-tools/latest/bin:
-    export PATH=$ANDROID_TOOLS_PATH:$PATH:
-    export PATH="$PATH:$HOME_PATH/Development/flutter/bin"
-    export PATH="$PATH:$HOME_PATH/Applications/nvim/bin"
-fi
 
-export LINGO_20_HOME="/var/home/umartinez/Applications/lingo20"
 
-export PATH="/var/home/umartinez/Applications/lingo20:$PATH"
