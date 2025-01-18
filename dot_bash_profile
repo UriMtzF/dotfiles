@@ -2,7 +2,7 @@
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
+  . ~/.bashrc
 fi
 
 # User specific environment and startup programs
@@ -13,7 +13,12 @@ export HOME_PATH=/home/umartinez
 # Added by Toolbox App
 export PATH="$PATH:/home/umartinez/.local/share/JetBrains/Toolbox/scripts"
 
-export PATH="$PATH:/home/umartinez/Applications/ngrok"
+export PATH="$PATH:$HOME_PATH/Applications/nvim/bin"
 
-
-
+# Distrobox configuration
+case "$CONTAINER_ID" in
+"flutter")
+  export PATH="$PATH:$HOME_PATH/Development/flutter/bin"
+  ;;
+*) ;;
+esac
