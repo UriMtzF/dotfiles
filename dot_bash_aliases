@@ -1,1 +1,2 @@
 alias de='distrobox enter'
+alias tldren='tldr -L en'
