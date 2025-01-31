@@ -6,6 +6,11 @@ return {
     "MunifTanjim/nui.nvim",
   },
   opts = {
+    filesystem = {
+      filtered_items = {
+        hide_gitignored = false,
+      },
+    },
     source_selector = {
       winbar = true,
     },
