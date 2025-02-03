@@ -1,0 +1,74 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-s": ["workspace::SendKeystrokes", "ctrl-s escape"],
+      "f7": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": ["workspace::SendKeystrokes", "escape"],
+      "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "shift-h": "pane::ActivatePrevItem",
+      "shift-l": "pane::ActivateNextItem",
+      "space e": "workspace::ToggleLeftDock",
+      "space :": "command_palette::Toggle",
+      "space b d": "pane::CloseActiveItem",
+      "space f f": "file_finder::Toggle",
+      "space g e": "git_panel::ToggleFocus",
+      "space c a": "editor::ToggleCodeActions",
+      "space c r": "editor::Rename",
+      "space c s": "outline::Toggle",
+      "space c S": "editor::FindAllReferences",
+      "space c f": "editor::Format",
+      "g r": "editor::FindAllReferences"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "space c a": "editor::ToggleCodeActions",
+      "space c f": "editor::FormatSelections",
+      "g s a": ["vim::PushOperator", { "AddSurrounds": {} }]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "n": "project_panel::NewFile",
+      "l": ["workspace::SendKeystrokes", "enter"]
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-w h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-h": "pane::ActivatePrevItem",
+      "ctrl-l": "pane::ActivateNextItem",
+      "ctrl-w c": "terminal_panel::ToggleFocus",
+      "ctrl-w n": "workspace::NewTerminal"
+    }
+  }
+]
